@@ -7,10 +7,12 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 
+import Link from './Link';
+
 
 const styles = {
   bar: {
-    backgroundColor: 'pink',
+    backgroundColor: '#F2BAC9',
   },
   root: {
     flexGrow: 1,
@@ -34,8 +36,8 @@ function ButtonAppBar(props) {
           <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
           </IconButton>
           <Typography variant="h6" color="inherit" className={classes.grow}>
-        <Button className={classes.menuButton}>Home</Button>
-           <Button className={classes.menuButton}>Contact</Button>
+        <Button className={classes.menuButton}><Link url="/" text="HOME"></Link></Button>
+           <Button className={classes.menuButton}><Link url="/contact" text="CONTACT"></Link></Button>
           </Typography>
         </Toolbar>
       </AppBar>

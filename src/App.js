@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+
 import ButtonAppBar from './App-bar';
- 
 import './App.css';
-
-
-const links = [
-  { url: '/', text: 'Home' },
-  { url: '/contact', text: 'Contact' },
-];
+import Home from './Home';
+import Contact from './Contact';
 
 class App extends Component {
   render() {
@@ -17,8 +13,9 @@ class App extends Component {
      <div>
 <ButtonAppBar>
 </ButtonAppBar>
-
-
+<Route path="/" exact component={Home} />
+<Route path="/contact" component={Contact} />
+<p>The rest of the page</p>
 
      </div>
      </BrowserRouter>
