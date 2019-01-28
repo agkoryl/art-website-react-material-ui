@@ -6,7 +6,10 @@ import Grid from "@material-ui/core/Grid";
 
 const styles = {
   footer: {
-    margin: "10px 0"
+    margin: "10px 0",
+    position: "absolute",
+    bottom: "0",
+    width: "100%",
   },
   footerDate: {
     fontSize: "16px",

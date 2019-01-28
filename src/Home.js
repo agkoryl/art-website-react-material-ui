@@ -13,8 +13,8 @@ class Home extends React.Component {
   render() {
     return (
       <main>
-        <Grid container className="home-display">
-          <Grid item xs={12} md={3}>
+        <Grid container className="cards-display">
+          <Grid item xs={12} md={3} className="card-item">
             {" "}
             <ImgMediaCard
               image={painting}
@@ -22,7 +22,7 @@ class Home extends React.Component {
               text="Oil painting is the process ..."
             />
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={3} className="card-item">
             {" "}
             <ImgMediaCard
               image={origami}
@@ -30,7 +30,7 @@ class Home extends React.Component {
               text=" is the art of paper folding..."
             />
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={3} className="card-item">
             {" "}
             <ImgMediaCard
               image={sketch}
