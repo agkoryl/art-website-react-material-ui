@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import painting from './img/painting.jpg';
 
 const styles = {
   card: {
@@ -29,16 +30,15 @@ function ImgMediaCard(props) {
           alt="Painting"
           className={classes.media}
           height="140"
-          image="./img/painting.jpg"
+          image={painting}
           title="Painting"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            Painting
           </Typography>
           <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            Oil painting technique
           </Typography>
         </CardContent>
       </CardActionArea>

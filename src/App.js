@@ -5,6 +5,7 @@ import ButtonAppBar from './App-bar';
 import './App.css';
 import Home from './Home';
 import Contact from './Contact';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
 </ButtonAppBar>
 <Route path="/" exact component={Home} />
 <Route path="/contact" component={Contact} />
-<p>The rest of the page</p>
+<Footer></Footer>
 
      </div>
      </BrowserRouter>
