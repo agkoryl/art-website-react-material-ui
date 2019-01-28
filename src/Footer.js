@@ -5,13 +5,13 @@ import IconAvatars from "./Icon";
 import Grid from "@material-ui/core/Grid";
 
 const styles = {
-    footer: {
-        margin: "10px 0"
-    },
+  footer: {
+    margin: "10px 0"
+  },
   footerDate: {
     fontSize: "16px",
     textAlign: "center",
-    padding: "5px",
+    padding: "5px"
   }
 };
 
