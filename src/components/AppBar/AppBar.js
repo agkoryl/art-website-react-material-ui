@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 
-import Link from "./Link";
+import Link from "../Link/Link";
 
 const styles = {
   bar: {

@@ -1,0 +1,26 @@
+
+.modal-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-title {
+
+}
+
+
+
+.modal-text {
+  
+}
+
+@media (min-width: 700px) {
+    .modal-text {
+        margin-left: 30px;
+    }
+}
+
+.art-image {
+    height: 100px;
+    width: auto;
+}

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
-import ButtonAppBar from "./App-bar";
+import ButtonAppBar from "./components/AppBar/AppBar";
 import "./App.scss";
-import Home from "./Home";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import Home from "./routes/Home/Home";
+import Contact from "./routes/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 class App extends Component {
   render() {

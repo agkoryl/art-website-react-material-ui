@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
+import { Link } from "react-router-dom";
+
 
 const styles = {
   iconsContainer: {
@@ -12,17 +14,17 @@ const styles = {
   },
   avatar: {
     margin: 10,
-    backgroundColor: "#BAF2BB"
+    backgroundColor: "#BAF2BB",
   },
   pinkAvatar: {
     margin: 10,
     color: "#fff",
-    backgroundColor: "#F2BAC9"
+    backgroundColor: "#F2BAC9",
   },
   blueAvatar: {
     margin: 10,
     color: "#fff",
-    backgroundColor: "#BAD7F2"
+    backgroundColor: "#BAD7F2",
   }
 };
 
@@ -36,13 +38,13 @@ function IconAvatars(props) {
       className={classes.iconsContainer}
     >
       <Avatar className={classes.avatar}>
-        <i className="fas fa-at" />
+        <Link to="mailto:ag.koryl@gmail.com"><i style={{color: "white"}} className="fas fa-at" /></Link>
       </Avatar>
       <Avatar className={classes.pinkAvatar}>
-        <i className="fab fa-github" />
+        <Link to="https://github.com/agkoryl"><i style={{color: "white"}} className="fab fa-github" /></Link>
       </Avatar>
       <Avatar className={classes.blueAvatar}>
-        <i className="fab fa-linkedin-in" />
+        <Link to="https://www.linkedin.com/in/agnieszka-koryl/"><i style={{color: "white"}} className="fab fa-linkedin-in" /></Link>
       </Avatar>
     </Grid>
   );

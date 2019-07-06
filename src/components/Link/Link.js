@@ -1,17 +1,19 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 const linkStyles = {
   color: "white",
   fontSize: 16,
   textDecoration: "none"
 };
 
-const Link = props => {
+const mLink = props => {
   return (
-    <a style={linkStyles} href={props.url}>
+    <Link style={linkStyles} to={props.url}>
       {props.text}
-    </a>
+    </Link>
   );
 };
 
-export default Link;
+export default mLink;

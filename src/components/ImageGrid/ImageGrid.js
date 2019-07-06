@@ -4,12 +4,12 @@ import { withStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 
-import brushes from "./img/brush.jpg";
-import abstractPainting from "./img/abstract-painting.jpg";
-import galleryPainting from "./img/gallery-painting.jpg";
-import housesPaiting from "./img/houses-painting.jpeg";
-import wallPaiting from "./img/wall-painting.jpg";
-import boatPainting from "./img/boat-painting.jpeg";
+import brushes from "../../assets/img/brush.jpg";
+import abstractPainting from "../../assets/img/abstract-painting.jpg";
+import galleryPainting from "../../assets/img/gallery-painting.jpg";
+import housesPaiting from "../../assets/img/houses-painting.jpeg";
+import wallPaiting from "../../assets/img/wall-painting.jpg";
+import boatPainting from "../../assets/img/boat-painting.jpeg";
 
 const styles = theme => ({
   root: {
@@ -18,11 +18,10 @@ const styles = theme => ({
     flexWrap: "wrap",
     justifyContent: "space-around",
     overflow: "hidden",
-    margin: "10px 5px",
     backgroundColor: theme.palette.background.paper
   },
   gridList: {
-    height: 450
+    height: 450,
   }
 });
 
@@ -69,7 +68,7 @@ function ImageGridList(props) {
   const { classes } = props;
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} >
       <GridList cellHeight={160} className={classes.gridList} cols={3}>
         {tileData.map(tile => (
           <GridListTile key={tile.img} cols={tile.cols || 1}>

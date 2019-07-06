@@ -1,8 +1,8 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 
-import ContactData from "./ContactData";
-import Map from "./Map";
+import ContactData from "../../components/ContactData/ContactData";
+import Map from "../../components/Map/Map";
 
 class Contact extends React.Component {
   render() {

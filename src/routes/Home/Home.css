@@ -5,16 +5,12 @@
   justify-content: center;
   width: 100%;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-.images-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 10px;
-}
+/* .images-container {
+
+} */
 
 @media (min-width: 600px) {
   .cards-display {
