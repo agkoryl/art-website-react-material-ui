@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
-import Grid from "@material-ui/core/Grid";
 
 import './CardModal.css';
 
@@ -24,7 +23,6 @@ const useStyles = makeStyles(theme => ({
             flexDirection: 'column'
         },
     },
-
 }));
 
 export default function CardModal(props) {
@@ -53,7 +51,6 @@ export default function CardModal(props) {
                     </div>
 
                     <CardModal />
-
 
                 </div>
             </Modal>

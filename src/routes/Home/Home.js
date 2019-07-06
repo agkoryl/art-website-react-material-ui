@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
+import { withRouter } from "react-router-dom";
 
 import "./Home.css";
 
@@ -93,4 +94,4 @@ class Home extends React.Component {
   }
 }
 
-export default withStyles(styles)(Home);
+export default withRouter(withStyles(styles)(Home));

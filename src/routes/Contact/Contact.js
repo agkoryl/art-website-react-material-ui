@@ -1,5 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
+import { withRouter } from "react-router-dom";
 
 import ContactData from "../../components/ContactData/ContactData";
 import Map from "../../components/Map/Map";
@@ -28,4 +29,4 @@ class Contact extends React.Component {
   }
 }
 
-export default Contact;
+export default withRouter(Contact);

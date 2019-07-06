@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
-import { Link } from "react-router-dom";
-
 
 const styles = {
   iconsContainer: {
@@ -38,13 +36,13 @@ function IconAvatars(props) {
       className={classes.iconsContainer}
     >
       <Avatar className={classes.avatar}>
-        <Link to="mailto:ag.koryl@gmail.com"><i style={{color: "white"}} className="fas fa-at" /></Link>
+        <a href="mailto:ag.koryl@gmail.com"><i style={{color: "white"}} className="fas fa-at" /></a>
       </Avatar>
       <Avatar className={classes.pinkAvatar}>
-        <Link to="https://github.com/agkoryl"><i style={{color: "white"}} className="fab fa-github" /></Link>
+        <a href="https://github.com/agkoryl"><i style={{color: "white"}} className="fab fa-github" /></a>
       </Avatar>
       <Avatar className={classes.blueAvatar}>
-        <Link to="https://www.linkedin.com/in/agnieszka-koryl/"><i style={{color: "white"}} className="fab fa-linkedin-in" /></Link>
+        <a href="https://www.linkedin.com/in/agnieszka-koryl/"><i style={{color: "white"}} className="fab fa-linkedin-in" /></a>
       </Avatar>
     </Grid>
   );

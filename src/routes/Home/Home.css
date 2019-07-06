@@ -8,10 +8,6 @@
   margin-bottom: 30px;
 }
 
-/* .images-container {
-
-} */
-
 @media (min-width: 600px) {
   .cards-display {
     flex-direction: row;
